@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int matrix1[3][4], matrix2[3][4], sum[3][4];
+    int i;
+    int j;
+
+    printf("Enter elements of the first 3x4 matrix:\n");
+    for ( i = 0; i < 3; i++) {
+		for ( j = 0; j < 4; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+    
+    printf("Enter elements of the second 3x4 matrix:\n");
+    for ( i = 0; i < 3; i++) {
+        for ( j = 0; j < 4; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+    
+    for ( i = 0; i < 3; i++) {
+        for (j = 0; j < 4; j++) {
+            sum[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+    
+    printf("\nSum of the two 3x4 matrices is:\n");
+    for (i = 0; i < 3; i++) {
+        for ( j = 0; j < 4; j++) {
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
