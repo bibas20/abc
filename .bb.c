@@ -4,7 +4,7 @@
 typedef struct {
     char name[50];
     int rollNumber;
-    char department[50];
+    char department[50]:
     float cgpa;
 } Student;
 
