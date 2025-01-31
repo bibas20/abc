@@ -12,10 +12,14 @@ int main() {
         } else {
             printf("The largest number is: %d\n", c);
         }
-    } else {
+    }
+    else
+    {
         if (b > c) {
             printf("The largest number is: %d\n", b);
-        } else {
+        } 
+        else
+        {
             printf("The largest number is: %d\n", c);
         }
     }
