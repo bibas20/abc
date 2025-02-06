@@ -12,6 +12,5 @@ int main() {
     smallest = (smallest < num5) ? smallest : num5;
 
     printf("The smallest number is: %d\n", smallest);
-
     return 0;
 }
